@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex mb-3">
     <form class="d-flex wrapper-search" role="search">
-      <i class="bi bi-search search-icon"></i>
+      <BIconSearch class="search-icon" />
       <input
         class="form-control me-2 ps-5"
         type="search"
@@ -11,8 +11,8 @@
         @input="searchNote"
       />
     </form>
-    <button class="btn-filter border-0 fs-5" @click.prevent="handleSort">
-      <i class="bi bi-funnel-fill"></i>
+    <button class="btn-filter border-0 fs-6" @click.prevent="handleSort">
+      <BIconSortDown class="icon" />
       Sort
     </button>
   </div>
@@ -27,13 +27,14 @@
         <router-link
           class="bg-warning text-light py-1 px-2 rounded"
           :to="{ path: `update/${item?.id}` }"
-          ><i class="bi bi-pencil"></i>
+        >
+          <BIconPencil />
         </router-link>
         <button
           class="bg-danger rounded border-0 text-light py-1 px-2"
           @click="deleteItem(item.id)"
         >
-          <i class="bi bi-trash"></i>
+          <BIconTrash />
         </button>
       </div>
     </li>

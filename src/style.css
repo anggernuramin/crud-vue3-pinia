@@ -24,15 +24,16 @@ body {
 }
 .wrapper-search .search-icon {
   position: absolute;
-  top: 7px;
+  top: 10px;
   left: 20px;
   font-size: 1.1rem;
 }
 .btn-filter {
+  display: inline-block;
   background-color: white;
-  padding-inline: 40px;
+  width: 25%;
+  padding-inline: 10px;
   height: 40px;
-  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,8 +44,8 @@ body {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.btn-filter i {
-  font-size: 1.5rem;
+.btn-filter .icon {
+  font-size: 1.2rem;
   color: #1f437a;
 }
 .items {
